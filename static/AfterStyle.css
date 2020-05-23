@@ -1,0 +1,78 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
+body, html {
+    height: 100%;
+  }
+body {
+    /* Full height */
+  height: 100%;
+
+  background-image: url('/templates/images/background.jpg');
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    
+   }
+ 
+
+body {
+  margin:0px;
+  font-family:'Roboto';
+  text-align:center;
+}
+.title{
+  font-family:'Roboto';
+  color:#666;
+  text-transform: uppercase;
+  font-size:24px;
+  font-weight:bold;
+  margin-top: 4vh;
+  margin-left:120px;
+}
+.inputform .form-text{
+    font-family:'Roboto';
+    color:#666;
+    text-transform: uppercase;
+    font-weight:bold;
+}
+
+.alert{
+    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+
+
+}
+.inputform .txtarea{
+  background: rgb(255,180,217);
+background: linear-gradient(317deg, rgba(255,180,217,0.258140756302521) 0%, rgba(235,158,95,0.48503151260504207) 52%, rgba(255,156,156,0.1516981792717087) 100%);
+}
+.alert .typing{
+  font-family:'Roboto';
+  color:#404040;
+  font-size: 14px;
+}
+
+.foot{
+  background: #181818;
+}
+
+.text-box{
+  margin-top: 6vh;
+  width: 200px;
+  height: 260px;
+
+  border-radius: 10px;
+  background: rgb(255,180,217);
+  background: linear-gradient(317deg, rgba(255,180,217,0.258140756302521) 0%, rgba(235,158,95,0.48503151260504207) 52%, rgba(255,156,156,0.1516981792717087) 100%);
+}
+.text-box .inner-text{
+
+margin-left: 10px;
+margin-right: 10px;
+margin-bottom: 20px;
+}
+.button-float{
+margin-right: 120px;
+margin-top : 20px;
+}

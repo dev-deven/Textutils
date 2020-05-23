@@ -1,0 +1,127 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Devendra</title>
+    <!-- Linking CSS  -->
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    <!-- BootStrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Latest compiled JavaScript -->
+
+    <script src="{% static 'typed.js' %}"></script>
+</head>
+<body>
+
+<style>
+body {
+  background-image: url('https://i.ibb.co/k99z0XW/background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+</style>
+    <!-- Nav-Bar Stat here ;) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="#">Text Analyzer</a>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://dev-deven.github.io/Portfolio-2.0/">About</a>
+      </li>
+      
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+    <!-- Nav-Bar Ends here -->
+    <!--  Alert Start-->
+    <div class="alert  alert-dismissible fade show " role="alert">
+        <strong>Hey There !</strong>  <span class="text_animination typing" ></span>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    <!-- Alert Ends here -->
+    
+    
+  
+    <div class="title">
+      WELCOME TO TEXTANALYZER
+    </div>
+    
+
+    <div class="container form-group inputform">
+
+      <label for="exampleFormControlTextarea1" class=" form-text" >Enter Your Text Here</label>
+      <form action='analyze' method='get' >
+        <textarea class="form-control txtarea" id="exampleFormControlTextarea1" rows="10" name="text" ></textarea>
+        <div class="checkbutton">
+          <input type="checkbox" name="removepunctuation">  Remove Punctuation <br>
+          <input type="checkbox" name="capsall">   UPPER CASE <br>
+          <input type="checkbox" name="spaceremover">  Remove Spaces <br>
+          <input type="checkbox" name="lineremover">  Remove New Line <br>
+          <input type="checkbox" name="charcount" >   Character Count  <br>
+        </div>   
+          <div class="analyzed-btn">
+            <button type="submit" class="btn btn-secondary">Anylize Text</button>
+          </div>
+    </form>
+  </div>
+  <!-- Footer -->
+
+      <div class=" foot">
+    <footer class="page-footer font-small ">
+
+      <!-- Copyright -->
+      <div class="footer-copyright text-center text-white py-5 ">© 2020 Copyright:
+        <a href="https://dev-deven.github.io/Portfolio-2.0/"> devendrapatil.tk</a>
+      </div>
+      <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+  </div>
+
+
+
+
+
+<!-- typed.js -->
+
+<script type="text/javascript" >
+    var typed = new Typed('.text_animination', {
+    strings: ["WE WELCOME YOU.", "THIS IS BEST TEST ANALYZER.","THE QUARANTINE PROJECT"],
+    typeSpeed: 35,
+    backSpeed: 35,
+    loop: 5,
+  });
+  </script>
+
+<!-- Java Script and Bootstrap js -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+   <!-- Java Script and Bootstrap js end  -->
+</body>
+</html>
